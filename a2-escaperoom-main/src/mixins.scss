@@ -1,0 +1,80 @@
+@mixin breakpoint($min-size) {
+    @media screen and (min-width: $min-size) {
+        @content;
+    }
+}
+
+@mixin input-position {
+    display: block;
+    margin-left: 4%;
+}
+
+@mixin input-size {
+    height: 40px;
+    width: 240px;
+}
+
+@mixin input-sizemm {
+    min-height: 40px;
+    max-width: 240px;
+}
+
+@mixin max-breakpoint($max-size) {
+    @media screen and (max-width: $max-size) {
+        @content;
+    }
+}
+
+@mixin modal-booking {
+    display: none;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+}
+
+@mixin modal-button {
+    float: inline-end;
+    margin-right: 4%;
+    margin-top: 3rem;
+    background-color: #E3170A;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+@mixin modal-buttonleft{
+    float: inline-start;
+    margin-left: 4%;
+    margin-top: 3rem;
+}
+
+@mixin modal-buttonmm {
+    min-height: 50px;
+    max-width: 180px;
+}
+
+@mixin modal-headline {
+    margin-top: 1em;
+    margin-right: 4%;
+    margin-bottom: 2rem;
+    margin-left: 4%;
+    font-size: 28px;
+    font-weight: normal;
+}
+
+@mixin modal-lable {
+    display: block;
+    margin-left: 4%;
+    padding-bottom: 0.2rem;
+    font-size: smaller;
+    font-weight: bold;
+}

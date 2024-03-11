@@ -1,0 +1,158 @@
+.modal1 {
+    animation: openUp 0.2s;
+    @include modal-booking;
+    overflow-y: auto;
+
+    &__headline {
+        @include modal-headline;
+    }
+
+    &__question {
+        margin-left: 4%;
+        margin-bottom: 1rem;
+        font-size: 15px;
+    }
+
+    &__inputLabel {
+        @include modal-lable;
+    }
+
+    &__inputDate {
+        @include input-position;
+        @include input-sizemm;
+    }
+
+    &__searchBtn--booking {
+        @include modal-buttonmm;
+        @include modal-button;
+
+        @media screen and (min-width: 550px) {
+            @include modal-buttonleft;
+        }
+    }
+}
+
+.modal2 {
+    animation: openUp 0.2s;
+    @include modal-booking;
+    overflow-y: auto;
+
+    &__headline {
+        @include modal-headline;
+    }
+
+    &__inputLabel1 {
+        @include modal-lable;
+    }
+
+    &__inputLabel2 {
+        padding-top: 1.2rem;
+        @include modal-lable;
+    }
+
+    &__inputLabel3 {
+        padding-top: 1.2rem;
+        @include modal-lable;
+    }
+
+    &__slotLabel {
+        padding-top: 1.2rem;
+        @include modal-lable;
+    }
+
+    &__playersLabel {
+        padding-top: 1.2rem;
+        @include modal-lable;
+    }
+
+    &__inputName {
+        @include input-position;
+        @include input-size;
+    }
+
+    &__inputEmail {
+        @include input-position;
+        @include input-size;
+    }
+
+    &__inputPhoneNr {
+        @include input-position;
+        @include input-size;
+    }
+
+    &__selectSlot {
+        @include input-position;
+        @include input-sizemm;
+
+        @media screen and (min-width: 250px) {
+            @include input-size;
+        }
+    }
+
+    &__selectPlayer {
+        @include input-position;
+        @include input-sizemm;
+
+        @media screen and (min-width: 250px) {
+            @include input-size;
+        }
+    }
+
+    &__submitBtn--booking {
+        @include modal-button;
+        @include modal-buttonmm;
+
+        @media screen and (min-width: 190px) {
+            height: 50px;
+            width: 180px;
+        }
+
+        @media screen and (min-width: 550px) {
+            @include modal-buttonleft;
+        }
+    }
+}
+
+.modal3 {
+    text-align: center;
+    animation: openUp 0.2s;
+    @include modal-booking;
+
+    &__headline {
+        display: block;
+        font-size: 30px;
+        font-weight: normal;
+        text-align: center;
+        margin-top: 40%;
+    }
+
+    &__aLink {
+        display: block;
+        color: #8ACFE5;
+        font-size: 20px;
+        font-weight: bold;
+        align-items: center;
+    }
+}
+
+.modal4 {
+    text-align: center;
+    animation: openUp 0.2s;
+    @include modal-booking;
+
+    &__headline {
+        display: block;
+        font-size: 30px;
+        font-weight: normal;
+        text-align: center;
+        margin-top: 40%;
+    }
+
+    &__aLink {
+        display: block;
+        color: #8ACFE5;
+        font-size: 20px;
+        font-weight: bold;
+        align-items: center;
+    }
+}

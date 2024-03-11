@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>[ESC] Escape Rooms</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='src/Hover.css'>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+    <script type = "module" src='main.js' defer></script>
+    <script type = "module" src='modules.js' defer></script>
+</head>
+
+<body>
+    <header id="header">
+        <div class="wrapper">
+            <div class="header__logo" alt="Escape's logo formed by letters E S C"></div>
+            <div class="header__title">
+                <h1>Hacker Escape Rooms</h1>
+            </div>
+        </div>
+
+    </header>
+
+    <nav class="nav__large">
+        <ul>
+            <a href="index.html">
+                <li class="Online">Home</li>  <!--I noticed there was no link to home page (If you go to filter no way to go back to home page )-->
+            <a href="./filter.htm?online">
+                <li class="Online">Play online</li>
+            </a>
+            <a href="./filter.htm?onsite">
+                <li class="OnSite">Play on-site</li>
+            </a>
+            <a href="about-us.html">
+                <li>The story</li>
+            </a>
+            <a href="contact-us.html">
+                <li>Contact us</li>
+            </a>
+        </ul>
+    </nav>
+
+    <div class="nav__mobile">
+        <img class="nav__mobile--openMenu" src="images/openMenu.png">
+        <div class="nav__mobile--bg"></div>
+        <div class="nav__mobile--menu">
+            <ul>
+                <a href="./filter.htm?online" class="hamburgerLink">
+                    <li class="Online">Play online</li>
+                </a>
+                <a href="./filter.htm?onsite" class="hamburgerLink">
+                    <li class="OnSite">Play on-site</li>
+                </a>
+                <a href="#theStory" class="hamburgerLink">
+                    <li>The story</li>
+                </a>
+                <a href="#footer" class="hamburgerLink">
+                    <li>Contact us</li>
+                </a>
+            </ul>
+            <img class="nav__mobile--closeMenu" src="images/close.png" alt="menu close button">
+        </div>
+    </div>
+
+    <img class="heroImage" src="images/header__spacer.png"
+        alt="omnius Hero picture of a man standing by several screens">
+
+    <main class="main">
+        <div class="main__topBtnWrapper--mobile">
+            <a href="./filter.htm?onsite">
+                <div class="OnSite button blue">
+                    <p>On-site challenges</p>
+                </div>
+            </a>
+            <a href="./filter.htm?online" >
+                <div class="Online">
+                    <p class="small-link">Online challenges</p>
+                </div>
+            </a>
+        </div>
+        <div class="main__topBtnWrapper--large">
+            <a href="./filter.htm?online">
+                <div class="Online button red">
+                    <p>Online challenges</p>
+                </div>
+            </a>
+            <a href="./filter.htm?onsite">
+                <div class="OnSite button blue">
+                    <p>On-site challenges</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="main__review">
+
+            <div class="main__review--grid" id="rev-2">
+                <div class="img"><img src="images/rev_head.png"> </div>
+
+                <div class="main__review--box">
+                    <div class="text">
+                        <p>This is a quote about how amazing this place is and how much fun me and my friends had when
+                            we tried it</p>
+                    </div>
+                    <div class="name">
+                        <p>John Doe, visited us in September 2021</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="main__review--grid" id="rev-1">
+                <div class="img"><img src="images/rev_head.png"> </div>
+
+                <div class="main__review--box">
+                    <div class="text">
+                        <p>This is a quote about how amazing this place is and how much fun me and my friends had when
+                            we tried it</p>
+                    </div>
+                    <div class="name">
+                        <p>John Doe, visited us in September 2021</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="main__slider--title">
+            <p>Popular challenges right now</p>
+        </div>
+
+        <div class="main__slider" id="on-site">
+        </div>
+
+        <div class="main__bottomBtnWrapper--mobile">
+            <a href="./filter.htm?onsite">
+                <div class="OnSite button blue">
+                    <p>On-site challenges</p>
+                </div>
+            </a>
+            <a href="./filter.htm?online">
+                <div class="Online">
+                    <p class="small-link">Online challenges</p>
+                </div>
+            </a>
+        </div>
+        <div class="main__bottomBtnWrapper--large">
+            <a href="./filter.htm?online">
+                <div class="Online button red">
+                    <p>Online challenges</p>
+                </div>
+            </a>
+            <a href="./filter.htm?onsite">
+                <div class="OnSite button blue">
+                    <p>On-site challenges</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="main__storyBox" id="theStory">
+            <div class="main__storyBox--story">
+                <p>Quodsi haberent magnalia inter potentiam et divitias, et non illam quidem haec eo spectant haec
+                    quoque
+                    vos
+                    omnino desit illud quo solo felicitatis libertatisque perficiuntur.</p>
+            </div>
+            
+                <a href="about-us.html">
+                    <div class="main__storyBox--button button darkBlue">
+                        <p>Read The full story</p>
+                    </div>
+                    </a> <!--Check font size and styling -->
+            </div>
+        </div>   
+ 
+        <div class="main__marketing">
+            <img class="motivation__img" id="group_img" src="images/motivation_group.png"
+                alt="two people by a screen helping eachother">
+            <div class="main__marketingBox" id="group_box">
+                <div class="main__marketingBox--text">
+                    <h3>Play with your friends or build your team stronger at work</h3>
+                    <p>Praeterea, ex culpa non invenies unum aut non accusatis unum. Et nihil inuitam. Nemo
+                        nocere
+                        tibi
+                        erit, et
+                        non inimicos, et</p>
+                    </div>
+                    <a href="./filter.htm?online">
+                        <div class="Online button red">
+                            <p>Book Online challenges</p>
+                        </div>
+                    </a>
+                
+            </div>
+            <img class="motivation__img" id="solo_img" src="images/motivation_solo.png"
+                alt="One person by a screen trying to solve a problem">
+            <div class="main__marketingBox" id="solo_box">
+                <div class="main__marketingBox--text">
+                    <h3>Play online or visit our venue for one of our 25 escape rooms</h3>
+                    <p>Praeterea, ex culpa non invenies unum aut non accusatis unum. Et nihil inuitam. Nemo
+                        nocere
+                        tibi
+                        erit, et
+                        non inimicos, et</p>
+                </div>
+                <a href="./filter.htm">
+                    <div class="Online button red">
+                        <p>See all challenges</p>
+                    </div>
+                </a>
+               <!-- <div id="seeAll" class="main__marketing--challenges button red">
+                <a href="./filter.htm">See all challenges</a>
+                </div>-->
+            </div>
+        </div>
+    </main>
+    <footer class="footer" id="footer">
+        <div class="footer__compay">
+            <h4>[Esc] Hacker Escape Rooms</h4>
+            <p>Quodsi haberent magnalia inter potentiam et divitias, et non illam quidem haec eo spectant haec quoque
+                vos omnino desit illud quo solo felicitatis libertatisque perficiuntur.</p>
+        </div>
+
+        <div class="footer__site-map">
+            <h4>Site map</h4>
+            <nav class="footer__follow">
+                <ul>
+                    <a href="About-us.html" class="fa fa-book"> The Story</a>
+                    <a href="contact-us.html" class ="fa fa-mobile"> Contact US</a>
+                    <a href="https://en.wikipedia.org/wiki/Copyright" class="fa fa-copyright"> Legal </a><br><br>
+                    <a href="./filter.htm?online" class="fa fa-pla-y">Play Online</a><br>
+                    <a href="./filter.htm?onsite" class="fa fa-pla-y" > Play On-site</a>
+                </ul>
+            </nav>
+          
+                
+           
+        </div>
+       
+
+        <nav class="footer__follow">
+            <h4>Follow us on</h4>
+            <ul>
+                <a href="Facebook.com" class="fa fa-facebook"> Facebook</a>
+                <a href="instagram.com" class ="fa fa-instagram"> Instagram</a>
+                <a href="x.com" class="fa fa-twitter"> X </a>
+            </ul>
+        </nav>
+    </footer>
+
+</body>
+
+</html>

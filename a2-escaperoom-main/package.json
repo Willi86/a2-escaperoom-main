@@ -1,0 +1,20 @@
+{
+  "name": "a2-escaperoom",
+  "version": "1.0.0",
+  "description": "Website for EscapeRoom assignment",
+  "scripts": {
+    "dev": "npm run sass:compile  & npm run sass:watch",
+    "sass:watch": "sass --no-source-map --watch src/main.scss main.css",
+    "sass:compile": "sass --no-source-map src/main.scss main.css",
+    "open-cypress": "cypress open",
+    "test": "cypress run"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.69.5"
+  },
+    "devDependencies": {
+      "cypress": "^13.6.6"
+    }
+}

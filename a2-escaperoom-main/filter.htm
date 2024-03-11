@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>[ESC] Escape Rooms</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='src/Hover.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script type="module" src='filter.js' defer></script>
+
+</head>
+
+<body>
+    <header id="header">
+        <div class="wrapper">
+            <div class="header__logo" alt="Escape's logo formed by letters E S C"></div>
+            <div class="header__title">
+                <h1>Hacker Escape Rooms</h1>
+            </div>
+        </div>
+
+    </header>
+    <nav class="nav__large">
+        <ul>
+            <a href="index.html">
+                <li class="Online">Home</li>
+                <!--I noticed there was no link to home page (If you go to filter no way to go back to home page )-->
+                <a href="./filter.htm?online">
+                    <li class="Online">Play online</li>
+                </a>
+                <a href="./filter.htm?onsite">
+                    <li class="OnSite">Play on-site</li>
+                </a>
+                <a href="about-us.html">
+                    <li>The story</li>
+                </a>
+                <a href="contact-us.html">
+                    <li>Contact us</li>
+                </a>
+        </ul>
+    </nav>
+
+    <div class="nav__mobile">
+        <img class="nav__mobile--openMenu" src="images/openMenu.png">
+        <div class="nav__mobile--bg"></div>
+        <div class="nav__mobile--menu">
+            <ul>
+                <a href="./index.html#on-site" class="hamburgerLink">
+                    <li>Play online</li>
+                </a>
+                <a href="./index.html#on-site" class="hamburgerLink">
+                    <li>Play on-site</li>
+                </a>
+                <a href="./index.html#theStory" class="hamburgerLink">
+                    <li>The story</li>
+                </a>
+                <a href="./index.html#footer" class="hamburgerLink">
+                    <li>Contact us</li>
+                </a>
+            </ul>
+            <img class="nav__mobile--closeMenu" src="images/close.png" alt="menu close button">
+        </div>
+    </div>
+
+    <div class="loading">
+        <div class="loadingBlock">
+            <div style='left:38px;top:38px;animation-delay:0s'></div>
+            <div style='left:80px;top:38px;animation-delay:0.125s'></div>
+            <div style='left:122px;top:38px;animation-delay:0.25s'></div>
+            <div style='left:38px;top:80px;animation-delay:0.875s'></div>
+            <div style='left:122px;top:80px;animation-delay:0.375s'></div>
+            <div style='left:38px;top:122px;animation-delay:0.75s'></div>
+            <div style='left:80px;top:122px;animation-delay:0.625s'></div>
+            <div style='left:122px;top:122px;animation-delay:0.5s'></div>
+        </div>
+    </div>
+    <h2 class="filter__title">Our Challanges</h2>
+
+    <button class="toFilter__bigButton">Filter challenges</button>
+    <section class="filter hidden">
+        <div class="exitBtn">
+            <span class="exitBar" id="exit-vert"></span>
+            <span class="exitBar" id="exit-horz"></span>
+        </div>
+
+
+
+        <h2 class="filter__Headline">Filter Challanges</h2>
+
+        <div class="filter__options">
+
+            <div class="filter__options--type">
+                <h4>By Type</h4>
+                <div>
+                    <input type="checkbox" id="online" name="online" checked>
+                    <label for="online">Include online Challanges</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="on-site" name="on-site" checked>
+                    <label for="on-site">Include onsite Challanges</label>
+                </div>
+
+            </div>
+
+            <div class="filter__options--rating">
+                <h4 class="filter__option--rating--title">By Rating</h4>
+
+                <div class="filter__options--rating--wrapper">
+                    <div class="filter__options--rating--min" aria-label="minRating" role="meter" aria-valuemin="0"
+                        aria-valuemax="5" aria-valuenow="1">
+                        <span aria-hidden="true" class="cbMin" id="cbMin-1"></span>
+                        <span aria-hidden="true" class="cbMin" id="cbMin-2"></span>
+                        <span aria-hidden="true" class="cbMin" id="cbMin-3"></span>
+                        <span aria-hidden="true" class="cbMin" id="cbMin-4"></span>
+                        <span aria-hidden="true" class="cbMin" id="cbMin-5"></span>
+
+                    </div>
+                    <div>to</div>
+                    <div class="filter__options--rating--max" aria-label="maxRating" role="meter" aria-valuemin="0"
+                        aria-valuemax="5" aria-valuenow="5">
+                        <span aria-hidden="true" class="cbMax" id="cbMax-1"></span>
+                        <span aria-hidden="true" class="cbMax" id="cbMax-2"></span>
+                        <span aria-hidden="true" class="cbMax" id="cbMax-3"></span>
+                        <span aria-hidden="true" class="cbMax" id="cbMax-4"></span>
+                        <span aria-hidden="true" class="cbMax" id="cbMax-5"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="filter__options--tags">
+                <h4 class="filter__options--tags--Title">By Tags</h4>
+                <div class="filter__options--tags--collectionBox">
+            </div>
+                <div>
+                    <input type="checkbox" class="someorall" id="AllLabels" name="allLabels" checked>
+                    <label for="allLabels">Match ALL the labels</label>
+                </div>
+                <div>
+                    <input type="checkbox" class="someorall" id="someLabels" name="someLabels">
+                    <label for="someLabels">Match SOME the labels</label>
+                </div>
+            </div>
+        </div>
+        <div class="filter__search">
+            <h4>Or type to search for a keyword</h4>
+            <input class="filter__search--input" id="filter__input--bar" placeholder="Enter keyword to search for">
+        </div>
+    </section>
+
+    <section id="testbox">
+
+    </section>
+
+    <footer class="footer" id="footer">
+        <div class="footer__compay">
+            <h4>[Esc] Hacker Escape Rooms</h4>
+            <p>Quodsi haberent magnalia inter potentiam et divitias, et non illam quidem haec eo spectant haec quoque
+                vos omnino desit illud quo solo felicitatis libertatisque perficiuntur.</p>
+        </div>
+        <div class="footer__site-map">
+            <h4>Site map</h4>
+            <nav class="footer__follow">
+                <ul>
+                    <a href="About-us.html" class="fa fa-book"> The Story</a>
+                    <a href="contact-us.html" class="fa fa-mobile"> Contact US</a>
+                    <a href="https://en.wikipedia.org/wiki/Copyright" class="fa fa-copyright"> Legal </a><br><br>
+                    <a href="./filter.htm?online" class="fa fa-pla-y">Play Online</a><br>
+                    <a href="./filter.htm?onsite" class="fa fa-pla-y"> Play On-site</a>
+                </ul>
+            </nav>
+        </div>
+
+
+        <nav class="footer__follow">
+            <h4>Follow us on</h4>
+            <ul>
+                <a href="Facebook.com" class="fa fa-facebook"> Facebook</a>
+                <a href="instagram.com" class="fa fa-instagram"> Instagram</a>
+                <a href="x.com" class="fa fa-twitter"> X </a>
+            </ul>
+        </nav>
+    </footer>
+
+</body>
+
+</html>

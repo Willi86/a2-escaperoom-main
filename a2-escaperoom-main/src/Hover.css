@@ -1,0 +1,23 @@
+/* Nice Gradient for buttons i found :) */
+button {
+  background-size: 100% 3px, 0 3px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+}
+
+button:hover {
+  background-size: 0 3px, 100% 3px;
+}
+
+a:hover, button:hover { /*scaling effect*/
+  transform: scale(1.1);
+}
+
+/* the actual effect we agreed on:
+
+a:hover,button:hover {
+  outline: 1px solid #062647; 
+  border-radius: 2%;
+
+}*//*# sourceMappingURL=Hover.css.map */

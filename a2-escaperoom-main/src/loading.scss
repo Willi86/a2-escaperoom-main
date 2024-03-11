@@ -1,0 +1,57 @@
+@keyframes loading {
+    0% {
+        background: #8acfe5
+    }
+
+    12.5% {
+        background: #8acfe5
+    }
+
+    12.625% {
+        background: #36769d
+    }
+
+    100% {
+        background: #36769d
+    }
+}
+
+.loading {
+        position: fixed;
+        top: 17vh;
+        right: 50%;
+        margin: 0 -200px;
+        z-index: 2;
+        display: inline-block;
+        width: 400px;
+        height: 200px;
+        overflow: hidden;
+        background: #ffffff;
+        backface-visibility: hidden;
+        @include breakpoint($medium-screen-breakpoint){
+            top:23vh;
+        }
+
+    .loadingBlock {
+            width: 30vw;
+            height: 30vh;
+            position: relative;
+            transform: translateZ(0) scale(1);
+            backface-visibility: hidden;
+            transform-origin: 0 0;
+            left: 25%;
+    
+        div {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background: #36769d;
+            animation: loading 1s linear infinite;
+        }
+    }
+
+}
+
+
+
+

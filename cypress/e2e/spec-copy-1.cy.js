@@ -1,0 +1,6 @@
+describe('template spec', () => {
+  it('passes', () => {
+    cy.visit('http://127.0.0.1:5500/a2-escaperoom-main/filter.htm?online')
+    cy.visit("http://127.0.0.1:5500/a2-escaperoom-main/filter.htm?onsite")
+  })
+})
